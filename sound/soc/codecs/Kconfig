@@ -461,6 +461,7 @@ config SND_SOC_TPA2028D
 	default n
 	help
 	  Texas Instruments 3W Mono Class-D Audio Amplifier
+<<<<<<< HEAD
 # Audio driver configuration
 comment "Audio driver Selection"
 
@@ -490,3 +491,11 @@ config BROADCOM_BT_AUDIO
 	default n
 	help
 		Broadcom Bluetooth RF Silicon Audio
+=======
+
+config SOUND_CONTROL_HAX_GPL
+	tristate "wcd93xx sound control hax"
+	default y
+	help
+	  FauxSound WCD93xx chipset sound control hacks
+>>>>>>> 04c5552... Sound Control: Sound control for WCD93xx codec
