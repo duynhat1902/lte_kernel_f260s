@@ -27,10 +27,14 @@ extern struct snd_kcontrol_new *gpl_faux_snd_controls_ptr;
 
 #define SOUND_CONTROL_MAJOR_VERSION	2
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define SOUND_CONTROL_MINOR_VERSION	1
 =======
 #define SOUND_CONTROL_MINOR_VERSION	0
 >>>>>>> 04c5552... Sound Control: Sound control for WCD93xx codec
+=======
+#define SOUND_CONTROL_MINOR_VERSION	1
+>>>>>>> cf46687... Sound Control: Added headphone poweramp controls
 
 #define CAMCORDER_MIC_OFFSET    20
 #define HANDSET_MIC_OFFSET      21
@@ -39,11 +43,17 @@ extern struct snd_kcontrol_new *gpl_faux_snd_controls_ptr;
 #define HEADPHONE_R_OFFSET      9
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define HEADPHONE_PA_L_OFFSET	6
 #define HEADPHONE_PA_R_OFFSET	7
 
 =======
 >>>>>>> 04c5552... Sound Control: Sound control for WCD93xx codec
+=======
+#define HEADPHONE_PA_L_OFFSET	6
+#define HEADPHONE_PA_R_OFFSET	7
+
+>>>>>>> cf46687... Sound Control: Added headphone poweramp controls
 static ssize_t cam_mic_gain_show(struct kobject *kobj, struct kobj_attribute *attr, char *buf)
 {
 	struct soc_mixer_control *l_mixer_ptr;
@@ -183,6 +193,9 @@ static ssize_t headphone_gain_store(struct kobject *kobj, struct kobj_attribute 
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> cf46687... Sound Control: Added headphone poweramp controls
 static ssize_t headphone_pa_gain_show(struct kobject *kobj, struct kobj_attribute *attr, char *buf)
 {
 	struct soc_mixer_control *l_mixer_ptr, *r_mixer_ptr;
@@ -231,8 +244,11 @@ static ssize_t headphone_pa_gain_store(struct kobject *kobj, struct kobj_attribu
 	return count;
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 04c5552... Sound Control: Sound control for WCD93xx codec
+=======
+>>>>>>> cf46687... Sound Control: Added headphone poweramp controls
 static ssize_t sound_control_version_show(struct kobject *kobj, struct kobj_attribute *attr, char *buf)
 {
 	return sprintf(buf, "version: %u.%u\n",
@@ -259,16 +275,23 @@ static struct kobj_attribute speaker_gain_attribute =
 		speaker_gain_store);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 static struct kobj_attribute headphone_gain_attribute =
 =======
 static struct kobj_attribute headphone_gain_attribute = 
 >>>>>>> 04c5552... Sound Control: Sound control for WCD93xx codec
+=======
+static struct kobj_attribute headphone_gain_attribute =
+>>>>>>> cf46687... Sound Control: Added headphone poweramp controls
 	__ATTR(gpl_headphone_gain,
 		0666,
 		headphone_gain_show,
 		headphone_gain_store);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> cf46687... Sound Control: Added headphone poweramp controls
 static struct kobj_attribute headphone_pa_gain_attribute =
 	__ATTR(gpl_headphone_pa_gain,
 		0666,
@@ -276,9 +299,12 @@ static struct kobj_attribute headphone_pa_gain_attribute =
 		headphone_pa_gain_store);
 
 static struct kobj_attribute sound_control_version_attribute =
+<<<<<<< HEAD
 =======
 static struct kobj_attribute sound_control_version_attribute = 
 >>>>>>> 04c5552... Sound Control: Sound control for WCD93xx codec
+=======
+>>>>>>> cf46687... Sound Control: Added headphone poweramp controls
 	__ATTR(gpl_sound_control_version,
 		0444,
 		sound_control_version_show, NULL);
@@ -290,9 +316,13 @@ static struct attribute *sound_control_attrs[] =
 		&speaker_gain_attribute.attr,
 		&headphone_gain_attribute.attr,
 <<<<<<< HEAD
+<<<<<<< HEAD
 		&headphone_pa_gain_attribute.attr,
 =======
 >>>>>>> 04c5552... Sound Control: Sound control for WCD93xx codec
+=======
+		&headphone_pa_gain_attribute.attr,
+>>>>>>> cf46687... Sound Control: Added headphone poweramp controls
 		&sound_control_version_attribute.attr,
 		NULL,
 	};
